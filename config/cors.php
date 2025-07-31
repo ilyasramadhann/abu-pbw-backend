@@ -1,3 +1,4 @@
+
 <?php
 return [
     'paths' => ['api/*'],
@@ -7,7 +8,7 @@ return [
         'http://localhost:5173','https://web-bps-frontend-v2.vercel.app'
     ],
 
-    'allowed_origins_patterns' => [],
+    'allowed_origins_patterns' => ['https://web-bps-frontend-v2.vercel.app'],
     'allowed_headers' => ['*'],
 
     'exposed_headers' => [],
