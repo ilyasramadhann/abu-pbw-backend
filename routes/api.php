@@ -15,10 +15,6 @@ use App\Http\Controllers\PublikasiController;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-// supaya preflight selalu ditangani tanpa auth
-Route::options('/{any}', function(Request $request) {
-    return response()->noContent();
-})->where('any', '.*');
 
 // --- Routes Autentikasi (Tidak Dilindungi Sanctum) ---
 // Ini adalah gerbang masuk ke aplikasi, jadi tidak memerlukan token.
